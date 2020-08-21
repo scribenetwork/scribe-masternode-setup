@@ -1,15 +1,16 @@
 # Scribe
-Shell script to install a [Scribe Masternode](http://scribe.network/) on a Linux server running Ubuntu 16.04.  
+Shell script to install a [Scribe Masternode](http://scribe.network/).  
 This will require a VPS, I use [Vultr](https://www.vultr.com/?ref=7310394).  The $5/mo server size will suffice.  
 This script will install **Scribe v0.2**.
 ***
 
 ## Installation:
 Log into the server using ssh (Putty for windows or terminal for Mac users) and run the following commands:
-```
-wget -q https://raw.githubusercontent.com/cryptosharks131/Scribe/master/scribe_install.sh
-bash scribe_install.sh
-```
+- Ubuntu 16.04 (64bit):
+   ```
+   wget -q https://raw.githubusercontent.com/scribenetwork/scribe-masternode-setup/master/ubuntu/16.04/amd64/scribe_install.sh
+   bash scribe_install.sh
+   ```
 ***
 
 ## Desktop wallet setup
@@ -55,11 +56,13 @@ systemctl is-enabled Scribe #To check whetether Scribe service is enabled on boo
 
 ## Updating Scribe
 The first line (rm scribe_update.sh) is not required the very first time you update the node and will return an error if you run it.  This is fine, continue with the update script.
-```
-rm scribe_update.sh*
-wget -q https://raw.githubusercontent.com/cryptosharks131/Scribe/master/scribe_update.sh
-bash scribe_update.sh
-```
+
+- Ubuntu 16.04 (64bit):
+   ```
+   rm scribe_update.sh*
+   wget -q https://raw.githubusercontent.com/scribenetwork/scribe-masternode-setup/master/ubuntu/16.04/amd64/scribe_update.sh
+   bash scribe_update.sh
+   ```
 ***
 
 ## Sentinel
